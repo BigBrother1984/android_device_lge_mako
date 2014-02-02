@@ -44,7 +44,6 @@
 #$(call add-clean-step, find $(OUT_DIR) -type f -name "IGTalkSession*" -print0 | xargs -0 rm -f)
 #$(call add-clean-step, rm -rf $(PRODUCT_OUT)/data/*)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/etc/vold.fstab)
-$(call add-clean-step, find $(OUT_DIR) -name "lights.msm8960*" -print0 | xargs -0 rm -f)
 $(call add-clean-step, find $(OUT_DIR) -name "*.default.*so" -print0 | xargs -0 rm -f)
 $(call add-clean-step, find $(PRODUCT_OUT) -name "*.prop" -print0 | xargs -0 rm -f)
 $(call add-clean-step, find $(OUT_DIR) -name "wpa_supplicant*" -print0 | xargs -0 rm -f)
@@ -114,4 +113,3 @@ $(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/EXECUTABLES/alsaucm_test_interm
 $(call add-clean-step, rm -f $(OUT_DIR)/target/product/mako/system/build.prop)
 
 $(call add-clean-step, rm -f $(OUT_DIR)/target/product/mako/system/build.prop)
-
